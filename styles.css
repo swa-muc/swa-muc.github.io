@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-weight: lighter;
+  font: 10px/1 "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+body {
+  text-rendering: optimizeLegibility; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline-block; }
+
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px black dotted; }
+
+.important-info {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+a.icon-link {
+  border: none; }
+
+#container {
+  width: 1024px;
+  margin: 0 auto;
+  -moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25); }
+
+#splash {
+  position: relative;
+  height: 72em;
+  padding: 0 40px;
+  background-image: url("rsrc/munich.jpg");
+  background-position: -100px 0;
+  background-repeat: no-repeat; }
+  #splash #statement {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14.4em;
+    line-height: 1.05em;
+    letter-spacing: -0.07em;
+    position: absolute;
+    width: 944px;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%); }
+  #splash #next-meetup {
+    font-size: 2.8em;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    text-align: right;
+    position: absolute;
+    width: 944px;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%); }
+
+#description {
+  padding: 60px 40px; }
+  #description a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px gray dotted; }
+  #description a.icon-link {
+    border: none; }
+  #description p {
+    font-size: 2.4em;
+    line-height: 1.5em;
+    margin-bottom: 40px; }
+  #description p.talk-title {
+    font-weight: bold; }
+  #description .title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14.4em;
+    line-height: 1.05em;
+    letter-spacing: -0.07em; }
+  #description p.organisation {
+    margin-bottom: 20px; }
+  #description div.person {
+    font-size: 2em;
+    line-height: 1.5em;
+    position: relative;
+    display: inline-block;
+    width: 432px;
+    margin-bottom: 20px; }
+    #description div.person:nth-child(odd) {
+      margin-right: 20px; }
+    #description div.person:nth-child(even) {
+      margin-left: 20px; }
+    #description div.person a {
+      border: none; }
+    #description div.person img {
+      border-radius: 4px;
+      position: absolute;
+      width: 71px;
+      top: 50%;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%); }
+    #description div.person .person-info {
+      padding-left: 91px;
+      display: inline-block; }
+  #description hr {
+    width: 100%;
+    border: none;
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: 40px auto; }
+
+#footer {
+  padding: 60px 40px;
+  color: white;
+  text-align: center;
+  background-color: #0563a5;
+  font-size: 2em;
+  line-height: 1.5em; }
+  #footer a {
+    color: white;
+    text-decoration: none;
+    border: none; }
+  #footer li {
+    padding: 0 40px; }
+  #footer hr {
+    width: 50%;
+    border: none;
+    background-color: white;
+    height: 1px;
+    margin: 40px auto; }
+  #footer #colophon {
+    font-size: 0.7em; }
