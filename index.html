@@ -19,67 +19,54 @@
     </div>
 
     <div id="next-meetup">
-      <span class="important-info">18:30 Uhr, 10. Mai 2017</span><br>
-      <span class="important-info">Dr. Peter Hruschka, Atlantic Systems Guild<br></span>
-      <span class="important-info">Peter Gafert, TNG Technology Consulting<br></span>
+      <span class="important-info">18:30 Uhr, 19. Jul 2017</span><br>
+      <span class="important-info">Prof. Dr. Stefan Wagner, Universität Stuttgart<br></span>
+      <span class="important-info">Gerhard Müller, TNG Technology Consulting<br></span>
       Registrieren:<br/>
-      <span class="important-info"><a href="https://www.meetup.com/de-DE/Software-Architektur-Muenchen/events/239505588/">Meetup</a><br/></span>
-      <span class="important-info"><a href="https://www.xing.com/events/treffen-gruppe-software-architektur-munchen-1811652">Xing</a></span>
+      <span class="important-info"><a href="https://www.meetup.com/de-DE/Software-Architektur-Muenchen/">Meetup</a><br/></span>
+      <span class="important-info"><a href="https://www.xing.com/communities/groups/software-architektur-muenchen-6769-1091546">Xing</a></span>
     </div>
   </section>
 
   <section id="description">
     <p class="talk-title">
-      IT-Architekten - Ihre Aufgaben und Verantwortungen
+      Entwicklerzentrierte Software-Evolution
     </p>
 
     <p>
-      Speaker: <a href="http://www.peterhruschka.eu/index.html">Dr. Peter Hruschka, Atlantic Systems Guild</a>
+      Speaker: Prof. Dr. Stefan Wagner, Universität Stuttgart
     </p>
 
     <p align="justify">
-      Je nach Projektgrößenordnung tragen Architekten verschiedene Verantwortungen - manche offensichtlich und andere weniger offensichtlich. Die Übernahme dieser Verantwortungen macht den Reiz dieses Berufsbildes aus. In dem Vortrag gibt Peter Hruschka Denkanstöße dazu. Angefangen von Architekten, die innerhalb eines Produktes die Verantwortung für ein Subsystem übernehmen, über Gesamtproduktverantwortung, bis hin zu Architekten für Produktgruppen oder Produktfamilien und Enterprise-Architekten. Neben der Verantwortung für die Qualität der angestrebten Lösung werden dabei vor allem bei den größeren Vorhaben auch die strategischen Verantwortungen, bis hin zu gesellschaftspolitischen und ethischen Verantwortungen angesprochen - die den IT-Architekten zum wertvollen Mitgestalter für den Erfolg von Unternehmen machen.
+      Die Forschung in der Informatik und Softwaretechnik ist oft sehr formal und technisch. Diese Arbeiten haben ihren Platz, aber aus praktischer Sicht sollte im Mittelpunkt eigentlich immer der Mensch stehen. Ein wichtiges Forschungsgebiet der Softwaretechnik ist die Software-Evolution, also die Weiterentwicklung bereits bestehender, vielleicht sehr großer Systeme. Hier sollte also der Entwickler oder die Entwicklerin im Zentrum stehen, also möglichst gut unterstützt werden. In diesem Vortrag stelle ich zwei Beispiele aus meinem Lehrstuhl vor, die dazu einen Beitrag leisten. Die eine Arbeit untersucht Methoden zur Empfehlung von gekoppelten Änderungen. Also das System schlägt vor: „Wer die Datei A geändert hat, hat auch oft die Datei B geändert.“ Wir haben hier zum Teil neue Methoden entwickelt und diese empirisch untersucht. Dabei hat sich gezeigt, dass Studierende mit dieser Unterstützung Wartungsaufgaben korrekter durchführen können als ohne. Die zweite Arbeit beschäftigt sich mit der Anwendung von statischer Analyse zum Auffinden typischer Fehler. Die existierenden Werkzeuge sind hier bereits sehr gut, werden aber nicht angewendet. Wir haben uns hier mit Hilfe der psychologischen Theorie der Salutogenese genähert und daraus eine neue Oberfläche für das Java-Werkzeug FindBugs abgeleitet. Im Experiment hat sich gezeigt, dass mit dieser neuen Oberfläche der Stress bei Studierenden während des Behebens von Fehlern in unbekanntem Code reduziert werden kann. Insgesamt zeigt sich also, dass Software-Evolution durch eine gezielte Unterstützung der beteiligten Menschen einfacher und besser gemacht werden kann.
     </p>
 
     <p align="justify"><i>
-      Dr. Peter Hruschka ist seit 1994 Principal bei der Atlantic Systems Guild und setzt sich seit über 30 Jahren für bessere Methoden und Verfahren bei der Entwicklung von Software-Systemen ein. Er ist Autor mehrerer Bücher und Mitbegründer des deutschen Portals für Software-Architekten arc42.
+      Prof. Dr. Stefan Wagner hat Informatik in Augsburg und Edinburgh studiert und an der TU München im Bereich Software-Qualität promoviert. Seit 2011 ist er Professor für Software Engineering an der Universität Stuttgart. Seine Hauptforschungsthemen sind Requirements Engineering, Software-Qualität, Safety & Security Engineering und Agile/Lean/Continous Software Development.
     </i>
     </p>
 
     <p class="talk-title">
-      How to keep your architecture alive
+      Agile Architektur - Wie viel Stabilität verträgt Agilität?
     </p>
 
     <p>
-      Speaker: Peter Gafert, TNG Technology Consulting GmbH
+      Speaker: Gerhard Müller, TNG Technology Consulting GmbH
     </p>
 
     <p align="justify">
-      Eine angemessene Architektur ist essentiell für jedes größere erfolgreiche Software-Produkt. Doch die Dokumentation, Umsetzung und Wissensverbreitung
-stellen eine fortlaufende Herausforderung dar, die mit der Anzahl der beteiligten Entwickler exponentiell zu wachsen scheint.
-Wie verhindern wir, dass unsere entworfene Architektur zu einem verstaubten Konzept auf dem Dokumentationsfriedhof verkommt? Wie stellen wir ein
-gemeinsames Verständnis aller beteiligter Entwickler her? Und wie verhindern wir, dass Ist- und Soll-Architektur völlig auseinander laufen und wir
-beim berühmten Big Ball of Mud enden?
-
-Der Vortrag beschäftigt sich im ersten Teil abstrakt mit diesen Fragen. Im zweiten Teil wird die Java Open Source Library <a href="http://archunit.org/">ArchUnit</a> vorgestellt, mit
-welcher sich viele Eigenschaften von Code und Code-Strukturen automatisiert als einfache Unit-Tests prüfen und langfristig sicherstellen lassen. Von
-typischen automatisierten Prüfungen, wie "Package com.foo darf nicht auf Package com.bar zugreifen", bis zu komplexen Regeln, wie "Klassen die mit
-@ClientEndpoint annotiert sind und im Package my.app.client.v1 liegen dürfen nur auf Methoden zugreifen, deren Rückgabewerte serialisierbar sind",
-bietet ArchUnit viel Flexibilität und kann auf vielfältige Art und Weise an die eigenen Bedürfnisse angepasst und erweitert werden. Der zweite Teil
-wird insbesondere viele hands-on Coding-Beispiele umfassen, die diese Möglichkeiten detailliert beleuchten.
+      Die Welt dreht sich immer schneller. Wie selbstverständlich leben wir agil mit Scrum, Kanban, Continuous Integration/Deployment und DevOps, bauen Prototypen, MVPs und probieren neue Technologien. Trotzdem brauchen wir Strukturen und Vorgehensweisen, die fundamentaler sind, die zukunftsfähig sind. Erhält im rasanten Alltag unserer Systeme und Produkte die Software-Architektur die notwendige Aufmerksamkeit? Testen wir sie, so wie wir heute (zum Glück fast selbstverständlich) Unit Tests schreiben? Wie dokumentieren wir sie? Wie erhalten wir sie? Was sind organisatorische Rahmenbedingungen? Was müssen wir tun, damit wir noch Herr unserer Architektur bleiben? Der Vortrag beleuchtet dieses Spannungsfeld und reflektiert entsprechende Erfahrungen.
     </p>
 
     <p align="justify"><i>
-      Peter Gafert ist Senior Consultant bei TNG Technology Consulting GmbH und beschäftigt sich im Projektalltag viel mit Software-Architektur.
-      Um den täglichen Umgang mit Architektur zu verbessern, entwickelt er nebenher die Open Source Library <a href="http://archunit.org/">ArchUnit</a>.
+      Gerhard Müller hat Informatik an der TU München studiert und ist Mitgründer und Partner bei TNG Technology Consulting. Er beschäftigt sich bereits seit ca. 15 Jahren intensiv mit Softwareentwicklung im Enterprise-Umfeld. In dieser Zeit hat er immer wieder festgestellt, dass gute Software zwar Voraussetzung für den Projekt- bzw. Produkterfolg ist, aber alleine nicht ausreicht. Genauso wichtig und gleichzeitig oft herausfordernder ist es Unternehmen, Märkte und Kunden nicht aus den Augen zu verlieren.
       </i>
     </p>
 
     <p align="justify">
-      Wir werden uns am 10. Mai 2017 um 18:30 Uhr
-      in den Räumen der <i><a href="https://www.lv1871.de/">Lebensversicherung von 1871 a. G. München</a></i>
-      treffen,
-      d.h. Maximiliansplatz 5, 80333 München &ndash; ganz in der Nähe vom Stachus.
+      Wir werden uns am 19. Juli 2017 um 18:30 Uhr
+      in den Räumen der <i>noch nicht bekannt</i>
+      treffen.
     </p>
 
     <p>
