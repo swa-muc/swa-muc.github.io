@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Software Architektur München</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
 </head>
 <body>
 
@@ -19,9 +19,9 @@
     </div>
 
     <div id="next-meetup">
-      <span class="important-info">18:30 Uhr, 14. Juni 2018</span><br>
-      <span class="important-info">Thomas Havemeister, Vodafone<br></span>
-      <span class="important-info">Michael Pisula, TNG<br></span>
+      <span class="important-info">18:30 Uhr, 18. Juli 2018</span><br>
+      <span class="important-info">Gernot Starke, innoQ Fellow<br></span>
+      <!--<span class="important-info">Michael Pisula, TNG<br></span>-->
       Registrieren:<br/>
       <span class="important-info"><a href="https://www.meetup.com/de-DE/Software-Architektur-Muenchen/">Meetup</a><br/></span>
       <span class="important-info"><a href="https://www.xing.com/events/treffen-gruppe-software-architektur-munchen-1955447">Xing</a></span>
@@ -30,47 +30,66 @@
 
   <section id="description">
     <p class="talk-title">
-	Streifendienst und Wissensmärkte: Aus dem Alltag einer IT Architekturabteilung.
+      Hilfe, Kind im Brunnen - Systematisch technische Schulden abbauen
     </p>
 
     <p>
-      Speaker: Thomas Havemeister
+      Speaker: Gernot Starke
     </p>
 
     <p align="justify">
-	Der Vortrag gibt einen pragmatischen Einblick in die Arbeitsweisen und Erfahrungen einer Konzern IT-Architekturabteilung.  
-In so einer Abteilung wird es niemals langweilig. Unzählige Business-Projekte, Markteinflüsse und Übernahmen treiben die IT regelrecht vor sich hin. Das Resultat ist häufig eine "Accidental Architecture". Kann man machen, funktioniert sogar, aber es gibt natürlich Alternativen. In dem Vortrag widmen wir uns den Arbeitsweisen der Architektur-Abteilung und skizzieren wie so eine Abteilung mit Wandel und Trends zurecht kommen muss. Dabei steht der Mensch im Mittelpunkt, denn Konzerne sind vorallem eins: große organische Körper. Ohne Social Skills, Change Management und WinWin-Situationen mit dem Business geht da leider nichts.
+      Wir verbringen als Entwickler und Architekten die meiste Zeit mit der Weiterentwicklung bestehender Systeme (der so genannten "Wartung").
+      Dabei ärgern wir uns oftmals über die vielfältigen Defizite dieser Systeme: Selbst vermeintlich einfache Dinge werden bei diesen
+      <b>Legacy-Systemen</b> unsäglich schwierig, die <b>time-to-market</b> wird immer schlechter, die Fachbereiche bauen immer mehr Feature-Druck
+      auf.
+      Im Vortrag zeige ich Ihnen Möglichkeiten auf, dieser Falle technischer und anderer Schulden systematisch zu entkommen:
+      Lernen Sie langfristige Verbesserungsansätze kennen, mit denen Sie auch in verfahrenen Situationen das Kind wieder aus dem Brunnen bergen
+      können.
+      Dazu begeben wir uns im ersten Schritt auf methodische Breitensuche nach Problemen, um unsere technischen,
+      organisatorischen und kommunikativen Schulden erstmal klar zu identifizieren.
+      Anschließend stelle ich Ihnen eine Reihe strategischer Verbesserungsansätze vor, beispielsweise Verbesserung durch:
     </p>
 
-    <p align="justify"><i>
-        Thomas arbeitet bei Vodafone Deutschland in der IT Architektur & Governance Abteilung. Hier betreut er Themen die sonst keiner will, also niemand formal zuständig ist. Zur Zeit ist das vorallem das Thema Cloud Adoption, also der Frage wie man das Moderne (Agile, Squads, Cloud) mit dem Klassischen (Wasserfall, ITIL, Data Center) zusammenbringt und für Projekte nutzbar macht.
-
-Davor hat Thomas in einer ähnlichen  Funktion bei Kabel Deutschland den Bereich Enterprise IT Architektur mit aufgebaut. In seinem früheren Berufsleben war er Softwareentwickler bei Beratungsfirmen. In der guten alten Zeit der N-tier JEE Architekturen hat Thomas als Consultant im Professional Services Bereich von BEA Systems (Oracle) gearbeitet und hat da kräftig Meilen bei Airlines gesammelt.
-
-Privat bringt Thomas gerade seinem 2-jährigen Sohn bei, wie man Lemmings auf einem Amiga spielt und warum Q*Bert eigentlich viel cooler ist als Pacman. Manchmal (nach internsiver Verhandlungen mit dem Vorstand) darf Thomas auch zu einem Heavy Metal Festival und trifft da seine Freunde die alle nicht mehr so viel Bier vertragen wie früher.
-    </i></p> 
-     <p class="talk-title">
-      Architekturdokumentation 
-    </p>
-
-    <p>
-      Speaker: Michael Pisula 
-    </p>
+    <ul>
+      <li>Verkleinerung: Migration in Richtung Self-contained Systems ("change-by-split" und "change-by-extraction")</li>
+      <li>stärkeren Fokus auf Fachlichkeit: Ansätze von Domain-Driven Design schrittweise in Legacy-Systeme einbringen ("restructure-to-domain")</li>
+      <li>Stärkung der Kohäsion innerhalb von Systemen ("improve modularization")</li>
+      <li>Homogenisierung - ähnliche Probleme in Systemen auch ähnlich lösen ("improve consistency")</li>
+      <li>Daten aufräumen: Modularisierung und Homogenisierung in Bestandsdaten ("database refactoring")</li>
+    </ul>
 
     <p align="justify">
-	Jedes Software-Projekt hat eine Architektur, im besten Fall sogar eine gute. Doch eine Architektur zu haben reicht nicht, man muss sie auch an alle Stakeholder kommunizieren. Ein gutes Mittel dazu ist eine guten Dokumentation. In diesem Vortrag möchte ich darauf eingehen, was aus meiner Sicht eine gute Dokumentation ausmacht, wie man so eine Dokumentation erstellt und welche Hilfsmittel es gibt.
+      Ich grenze diese strategischen (d.h. langfristigen) Ansätze gegen die bekannten taktischen Verbesserungen wie Refactoring ab,
+      und illustriere durch (anonymisierte) praktische Beispiele.
     </p>
 
     <p align="justify"><i>
-	Michael ist Principal Consultant bei der TNG Technology Consulting GmbH, wo er sein Interesse für das Entwickeln verteilter Software Systeme seit 5 Jahren auslebt. Aktuell setzt er mit einem Team von 16 TNG Consultants für einen unserer Kunden eine über mehrere Rechenzentren verteilte Big Data Platform um.
+      Gernot Starke (innoQ Fellow), Coach und Berater für methodische Softwarearchitektur, (Mit-)gründer von arc42.org, Gründer von aim42.org. Gernot
+      hat bei Entwurf und Implementierung mittlerer und großer Systeme für Organisationen aus unterschiedlichen Bereichen mitgearbeitet, hauptsächlich
+      im Bereich Finanzen, Versicherungen, Automotive, Logistik und Telekommunikation. Daneben hat er zahlreiche Bücher über Softwarearchitektur und
+      Patterns geschrieben und veröffentlicht regelmäßig Fachartikel. Er lebt mit seiner Familie in Köln.
     </i></p>
 
-  </i></p>
+    <p class="talk-title">
+      <!--title2-->
+    </p>
+
+    <p>
+      <!--Speaker: speaker2-->
+    </p>
 
     <p align="justify">
-      Wir werden uns am 14. Juni 2018 um 18:30 Uhr
-      in den Räumen von <i><a href="https://goo.gl/maps/JJhet3H1cN62">TNG Technology Consulting GmbH</a></i>
-      treffen.
+      <!--description2-->
+    </p>
+
+    <p align="justify"><i>
+      <!--bio2-->
+    </i></p>
+
+    <p align="justify">
+      Wir werden uns am 18. Juli 2018 um 18:30 Uhr
+      <!--in den Räumen von <i><a href="https://goo.gl/maps/JJhet3H1cN62">TNG Technology Consulting GmbH</a></i>-->
+      treffen. Der Ort folgt in Kürze.
     </p>
 
     <p>
@@ -87,8 +106,8 @@ Privat bringt Thomas gerade seinem 2-jährigen Sohn bei, wie man Lemmings auf ei
       dienen neben den <a href="https://www.xing.com/communities/groups/software-architektur-muenchen-6999-1091546/">Xing-Gruppen</a>-Möglichkeiten
       insbesondere der persönliche Erfahrungsaustausch, organisiert in informellen Treffen, Diskussion von
       Erfahrungsberichten und Case Studies bis hin zu Vorträge und Workshops. Diese werden auch über Twitter
-      <a href="https://twitter.com/swamuc">@swamuc</a> und <a
-        href="https://www.meetup.com/de-DE/Software-Architektur-Muenchen">Meetup</a> bekannt gegeben. Detaillierte Information über vergangene
+      <a href="https://twitter.com/swamuc">@swamuc</a> und
+      <a href="https://www.meetup.com/de-DE/Software-Architektur-Muenchen">Meetup</a> bekannt gegeben. Detaillierte Information über vergangene
       Veranstaltungen findet ihr in unserem <a href="https://swa-muc.atlassian.net">Wiki</a>.
     </p>
 
@@ -139,8 +158,8 @@ Privat bringt Thomas gerade seinem 2-jährigen Sohn bei, wie man Lemmings auf ei
           <a href="https://twitter.com/codecholeric">@codecholeric</a>
         </div>
       </div>
- 
-     <div class="person">
+
+      <div class="person">
         <img src="rsrc/avatar-lars.png">
         <div class="person-info">
           <span class="important-info">Lars Bonnes</span><br>
@@ -150,7 +169,7 @@ Privat bringt Thomas gerade seinem 2-jährigen Sohn bei, wie man Lemmings auf ei
         </div>
       </div>
 
-   </div>
+    </div>
 
   </section>
 
@@ -165,9 +184,9 @@ Privat bringt Thomas gerade seinem 2-jährigen Sohn bei, wie man Lemmings auf ei
       </ul>
       <hr>
       <div id="colophon">
-        <a href="https://swa-muc.atlassian.net/wiki/display/SWAMUC/Impressum">Impressum</a> — Bild aus <a
-          href="http://flic.kr/">Flickr</a>, leicht modifiziert — Icons aus <a
-          href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>
+        <a href="https://swa-muc.atlassian.net/wiki/display/SWAMUC/Impressum">Impressum</a> —
+        Bild aus <a href="http://flic.kr/">Flickr</a>, leicht modifiziert —
+        Icons aus <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>
       </div>
     </div>
   </section>
