@@ -19,10 +19,10 @@
     </div>
 
     <div id="next-meetup">
-      <span class="important-info">18:30 Uhr, 15. Oktober 2019</span><br>
-      <span class="important-info">Oliver Finker<br></span>
-      <span class="important-info">Andreas Greimel<br></span>
-      <span class="important-info">Gerhard Müller<br></span>
+      <span class="important-info">18:30 Uhr, 10. Dezember 2019</span><br>
+      <span class="important-info">Daniel G&ouml;tz<br></span>
+      <span class="important-info">Peter Gafert<br></span>
+      <span class="important-info">Florian Deißenböck<br></span>
 
       Registrieren:<br/>
       <span class="important-info"><a href="https://www.meetup.com/de-DE/Software-Architektur-Muenchen/events/265537328//">Meetup</a><br/></span>
@@ -32,55 +32,48 @@
 
   <section id="description">
     <p class="talk-title">
-      "Off-The-Shelf" oder "Build-Your-Own"? Mit Wardley-Maps bessere Architektur-Entscheidungen treffen
+      Rettet den Mud-olith!
     </p>
 
     <p>
-      Sprecher: Oliver Finker
+      Sprecher: Daniel Götz und Peter Gafert, TNG Technology Consulting GmbH
     </p>
 
 
     <p align="justify">
-      Moderne Software-Architekturen bestehen aus einer Vielzahl von Komponenten. Für jede Einzelne davon stellt sich die Frage, ob man lieber einen bestehenden Service, eine Middleware, eine Bibliothek oder ein Framework verwendet -  oder ob man es lieber selber für spezielle Bedürfnisse neu entwickelt. Und was ist mit Outsourcing? Für welche Komponenten ergibt das Sinn? Gute Software-Architekten treffen diese Entscheidungen aufgrund von Best Practices und ihrer reichhaltigen Erfahrung. Dennoch stellt sich oft im Nachhinein heraus, dass entweder in einzelnen Bereichen das gewählte Fremdprodukt nicht anpassbar genug ist, oder dass man zu viel Zeit in die Entwicklung von unnötigen Komponenten gesteckt hat.<br>In meiner Präsentation zeige ich, was Wardley Maps sind, wie man eine solche Map für das zu entwerfende Produkt erstellt und wie man daraus Architektur-Entscheidungen ableitet.
+      Oft beginnt es harmlos: eine Handvoll Entwickler, eine Kerndomäne. Mit zunehmendem Erfolg wird die Entwicklungsmannschaft größer, Subdomänen und Features häufen sich. Viele solcher "gewachsener" Projekte sind "Cash Cows" mit hunderten Personenjahren an Entwicklung, gleichzeitig aber auch "Big Balls of Mud":
+      <br/>
+      Inkonsistente Verwendung von Patterns, verquere Abhängigkeiten, Features/Bugfixes verschlingen Unmengen an Budget.
+      <br/>
+      Wie kommen wir von diesem Stand zu modularen Systemen ohne die Feature-Entwicklung zu unterbrechen?
+      <br/>
+      In diesem Vortrag erzählen wir über unsere Erfahrungen bei der Entwicklung und Verbesserung eines > 5 Mio. LOC Monolithen, an dem ~60 Entwickler arbeiten. Wir erläutern nicht nur Methodik zur kontinuierlichen Verbesserung, sondern stellen auch ganz konkret anhand der OS-Library ArchUnit Muster vor, die auch dann funktionieren, wenn jede Architekturregel Tausende von Verletzungen erzeugt. Anhand von Live-Examples werden wir sehen, wie man bei laufender Feature-Entwicklung solch einen Monolithen hin zu einem "Modulithen" mit sauberen Abhängigkeiten verwandeln kann.
+    </p>
+
+    <p align="justify">
+      Daniel Götz kümmert sich als Senior Consultant bei der TNG Technology Consulting GmbH in seinem Alltag um die Wartung und Erweiterung historisch gewachsener Softwareprojekte. Da erodierte Softwarearchitektur eines der Grundprobleme gewachsener Anwendungen darstellt, findet er kontinuierlich neue Muster und Wege, um diese unter den gegebenen Rahmenbedingungen in einen wartbaren Zustand zu überführen.
+      <br/><br/>
+      Peter Gafert ist Principal Consultant bei TNG Technology Consulting GmbH und beschäftigt sich im Projektalltag viel mit agiler Software-Architektur. Insbesondere wie Architektur in großen Projekten über viele Teams hinweg verbreitet, dokumentiert und wo möglich automatisiert sichergestellt werden kann. Um diese Arbeit zu erleichtern, hat er die Open-Source-Library ArchUnit ins Leben gerufen und entwickelt diese nun kontinuierlich weiter.
     </p>
 
     <p class="talk-title">
-      "Amplify your Web App": Cloud Backends mit AWS Amplify
+      Qualitäts-Türchen statt Quality-Gates
     </p>
 
     <p>
-      Sprecher: Andreas Greimel, TNG Technology Consulting GmbH
+      Sprecher: Florian Deißenböck
     </p>
 
     <p align="justify">
-    	AWS Amplify ist ein Framework, mit dem sich sehr einfach verschiedene AWS Services in die eigene Web-App einbinden lassen.
-    	Dadurch bekommt man extrem schnell ein komplettes Web-App-Backend, inklusive
-    	<ul>
-  			<li>Nutzerauthentifizierung und -registrierung</li>
-    		<li>einer REST-API,</li>
-    		<li>Hosting, optional mit CDN,</li>
-    		<li>und mächtigen Analysefunktionen.</li>
-</ul>
-    	    </p>
-    	        <p align="justify">
-    	Andreas demonstriert im Vortrag live, wie Aplify in eine Web-Anwendung integriert werden kann.
-    </p>
-
-    <p class="talk-title">
-      Entscheidungsfindung in Projekten
-    </p>
-
-    <p>
-      Sprecher: Gerhard Müller, TNG Technology Consulting GmbH
-    </p>
-
-
-    <p align="justify">
-      Software-Projekte sind ein komplexes Vorhaben mit vielen unterschiedlichen Teilaspekten, die voneinander abhängen und sich gegenseitig beeinflussen. Insbesondere in agilen Teams sind formale Hierarchien weniger verbreitet. Um so spannender ist es zu reflektieren, welche Möglichkeiten und Mechanismen es gibt, wie sich Teams abstimmen und zu guten Entscheidungen kommen.
+      Quality-Gates, wie sie in vielen Software-Entwicklungsprozessen definiert sind, funktionieren in der Praxis meist nicht wie gewünscht, da sie zu schwergewichtig sind und ihr Feedback viel zu spät kommt. In diesem Vortrag zeige ich auf wie jüngere Entwicklungen im Bereich Code-Collaboration-Platforms (Github, Bitbucket, Gitlab und Co.) es erlauben, eine viel schlankere und wirksamere Form von Quality-Gates zu etablieren. Diese "Qualitäts-Türchen" werden einerseits erst durch Innovationen wie Infrastructure-as-Code ermöglicht, integrieren andererseits aber seit langem bekannte Methoden wie Code-Reviews. In Kombination ermöglicht dies Qualitäts-Feedback-Schleifen, die bzgl. Umfang und Geschwindigkeit bis vor kurzem kaum vorstellbar gewesen wären. Erste Erfahrungen mit diesen Verfahren geben Hoffnung, dass damit den Qualitätssicherungsmaßnahmen endlich die zentrale Rolle im Entwicklungsprozess zukommt, die ihnen seit langem fehlt.
     </p>
 
     <p align="justify">
-      Wir werden uns am 15. Oktober 2019 um 18:30 Uhr
+    	Florian Deißenböck hat im Bereich Softwarequalität promoviert und ist Mitgründer der CQSE. Als Verantwortlicher des Bereichs Software-Audit untersucht er gewachsene Softwaresysteme in den unterschiedlichsten Branchen und Technologien. Deißenböck spricht regelmäßig auf Konferenzen und wurde auf der International Conference on Program Comprehension 2015 und der International Conference on Software Maintenance and Evolution 2017 mit dem "Most Influential Paper Award" ausgezeichnet.
+    </p>
+
+    <p align="justify">
+      Wir werden uns am 10. Dezember 2019 um 18:30 Uhr
       in den Räumen von <i><a href="https://goo.gl/maps/koMicAKcKrG2">TNG Technology Consulting GmbH</a></i> <b>in der Arabellastraße</b>
       treffen:<br><br>
       Arabellastraße 4a<br>
